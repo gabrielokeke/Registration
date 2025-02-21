@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <img src="images (1).png" alt="images" >
+         <!-- Registration Section -->
+         <div id="reg">
+            <h1>Inscrivez vous!</h1>
+            <h3>Vous voulez apprendre à coder rapidement ? D-CLIC est l'endroit idéal</h3>
+            
+            <form id="reg-form">
+
+                <div id="register">
+                <label for="name"><b>Nom</b></label>
+                <input type="text" placeholder="Nom" required id="nom" title="Votre nom doit contenir uniquement des caractères">
+                <div id="error-message"></div>
+                </div>  
+
+                <div id="register">
+                <label for="surname"><b>Prenom</b></label>
+                <input type="text" placeholder="Prenom" required id="prenom" title="Votre prenom doit contenir uniquement des caractères">
+                <div id="error-message"></div>
+                </div>
+                
+                <div id="register">
+                <label for="phone"><b>Numero de telephone</b></label>
+                <input type="number" placeholder="+229 01 xx xx xx xx" required id="numero" title="Commencez votre numero par +229 et ajoutez le 01 juste après svp..." pattern="^[01]\d{8,8}$" minlength="10" maxlength="10">
+                <div id="error-message"></div>
+                </div>
+
+                <div id="register">
+                <label for="dob"><b>Date de naissance</b></label>
+                <input type="date" placeholder="Date de naissance" required id="date">
+                <div id="error-message"></div>
+                </div>
+
+                <div id="register">
+                <label for="Motivation"><b>Motivation</b></label>
+                <textarea id="Motivation" name="Motivation" rows="5" cols="60" minlength="1000" maxlength="2500" title="Votre motivation doit avoir un minimum de 1000 caractères" ></textarea>
+                <div id="error-message"></div>
+                </div>    
+                
+                <button id="btn" type="submit">S'inscrire</button>
+            </form>
+            <div id="check" >
+                <h2>Vos informations</h2>
+                <p>Nom : <span id="checknom"></span></p>
+                <p>Prénom : <span id="checkprenom"></span></p>
+                <p>Date de naissance : <span id="checkdate"></span></p>
+                <p>Numéro de téléphone : <span id="checknumero"></span></p>
+                <p>Motivation :</p>
+                <p id="checkmotivation"></p>
+
+                
+            </div>
+        </div>  
+    </section> 
+    <script src="script.js"></script>
+</body>
+</html>

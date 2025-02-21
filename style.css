@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    border: 2px solid green;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px;
+}
+
+.container img {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+#reg h1 {
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 5px 0;
+    background-color: gainsboro;
+    border: 2px solid green;
+    color: black
+    ;
+}
+
+#reg h3 {
+    font-size: 15px;
+    text-align: center;
+    color: green;
+}
+
+#reg p {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+#reg input {
+    font-size: 10px;
+    padding: 10px 10px;
+    width: 97%;
+    border: 2px solid green;
+    border-radius: 5px;
+    outline: none;
+    opacity: 90%;
+    background-color: #dcdcdc;
+    
+}
+
+#reg button {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px 0;
+    padding: 5px 10px;
+    width: 40%;
+    border: 2px solid green ;
+    border-radius: 25px;
+    background-color: #dcdcdc;
+}
+
+#reg button:hover {
+    color:white;
+    background: green;
+}
+
+#reg textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid green;
+    background-color: #dcdcdc;
+}
+
+#register input:focus {
+    outline: 0;
+}
+
+#register.success input {
+    border-color: green;
+}
+
+#register.error input {
+    border-color: red;
+}
+
+#register #error-message {
+    color: red;
+    font-size: 15px;
+    height: 13px;
+}
+
+
+.showCheck {
+    display: block;
+    background-color: green;
+}
